@@ -1,4 +1,4 @@
-# MNIST digit recognition neural net model
+# MNIST digit recognition neural network model
 
 import numpy as np
 import pandas as pd 
@@ -14,11 +14,11 @@ from skimage.util import crop
 class Recognizer:
 
     #=============================================
-    # Main class initializes a nueral net model.
+    # Main class initializes a nueral network model.
     # Train and test data sets should be in the subdirectory .../data by default.
     # As the program is intended especially for Kaggle competition, the sample_submission.csv file must be placed in .../data directory
     #
-    # The neural net consists of sequent levels of two convolutional leyers 
+    # The neural network consists of sequent levels of two convolutional leyers 
     # followed by one maximum pooloing level and two fully connected leyers in the end.
     # 
     # To run recognition properly a fit() method should be applyed after instantiating a Recognazer class object. 
@@ -84,10 +84,10 @@ class Recognizer:
         return X_upg, y_upg
 
     def fit(self, Xy, to_continue=False, load_weights=False, save_weights=False, load_path='model/weights.h5', save_path='model/weights.h5'):
-        # Learns a neural net.
+        # Learns a neural network.
         # Input Xy must be a tuple of train data set and lebels vector. In this model input intends to be an upgrage() method
         # Load_weights and save_weights direct whether to load existing weights file and save resulting weights as a file respectively.
-        # If load_weights and save_weights are both True, the net will be learned again with initial loaded weights.
+        # If load_weights and save_weights are both True, the network will be learned again with initial loaded weights.
         if load_weights:
             self.model.load_weights(load_path)
         if not load_weights or load_weights and to_continue:

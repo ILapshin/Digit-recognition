@@ -5,4 +5,4 @@ The main class Recognizer has a nueral network model made as TensorFlow.Keras.Se
 
 To increas prediction accuracy an upgrade of dataset was implemented. Training dataset was expanded by adding a number of element-wisely modified oroginal datasets. Modification was made by rotating and shifting each digit by a moderate value. Additionally, this technic allowed me to validate a model fitted this way to the original full unmodified training dataset for much visibility.
 
-Optimal architecture of the network which I stopped on contained two sequences of double convolutional leyers followed by poolong leyer. The accuracy score I managed to reach using such a model was 0.99528.
+Optimal architecture of the network which I stopped on contained two sequences of double convolutional leyers followed by max pooling leyer. The accuracy score I managed to reach using such a model was 0.99528.

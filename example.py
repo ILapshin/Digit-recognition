@@ -1,4 +1,4 @@
-# Example of using my Recognizer with wich I reached a 0.99528 accuracy
+# Example of using my Recognizer with which I reached a 0.99528 accuracy
 
 from digit_recognizer import Recognizer
 
